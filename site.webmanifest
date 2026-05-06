@@ -1,0 +1,18 @@
+{
+  "name": "Rodeluxe – Premium Frisörsalong Kristianstad",
+  "short_name": "Rodeluxe",
+  "description": "Premium frisörsalong i Kristianstad. Klippning, skägg, styling och ansiktsbehandling.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0a0a0a",
+  "theme_color": "#c9a96e",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}

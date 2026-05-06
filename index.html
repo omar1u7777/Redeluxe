@@ -1,0 +1,651 @@
+<!doctype html>
+<html lang="sv">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#0a0a0a" />
+
+    <title>Rodeluxe – Premium Frisörsalong i Kristianstad</title>
+    <meta name="description" content="Rodeluxe – premiumfrisörsalong i Kristianstad. Klippning, styling och ansiktsbehandling med fokus på kvalitet, precision och exklusiv upplevelse." />
+    <meta name="keywords" content="frisör Kristianstad, barberare Kristianstad, herrklippning, damklippning, ansiktsbehandling, Rodeluxe" />
+    <meta name="author" content="Rodeluxe" />
+    <meta name="robots" content="index, follow" />
+    <link rel="canonical" href="https://rodeluxe.netlify.app/" />
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="business.business" />
+    <meta property="og:title" content="Rodeluxe – Premium Frisörsalong i Kristianstad" />
+    <meta property="og:description" content="Premiumfrisörsalong med fokus på kvalitet, precision och exklusiv upplevelse. Boka din tid idag." />
+    <meta property="og:url" content="https://rodeluxe.netlify.app/" />
+    <meta property="og:image" content="https://cdn.bokadirekt.se/ucdn/ad6f70b9-c165-4a14-866a-92f641518924/" />
+    <meta property="og:locale" content="sv_SE" />
+    <meta property="og:site_name" content="Rodeluxe" />
+    <meta property="business:contact_data:street_address" content="Götgatan 18" />
+    <meta property="business:contact_data:locality" content="Kristianstad" />
+    <meta property="business:contact_data:country_name" content="Sverige" />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Rodeluxe – Premium Frisörsalong i Kristianstad" />
+    <meta name="twitter:description" content="Premiumfrisörsalong med fokus på kvalitet och precision." />
+    <meta name="twitter:image" content="https://cdn.bokadirekt.se/ucdn/ad6f70b9-c165-4a14-866a-92f641518924/" />
+
+    <!-- JSON-LD Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "HairSalon",
+      "name": "Rodeluxe",
+      "description": "Premiumfrisörsalong i Kristianstad med fokus på kvalitet och precision.",
+      "url": "https://rodeluxe.netlify.app/",
+      "telephone": "+46729304898",
+      "image": "https://cdn.bokadirekt.se/ucdn/ad6f70b9-c165-4a14-866a-92f641518924/",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Götgatan 18",
+        "addressLocality": "Kristianstad",
+        "postalCode": "290 31",
+        "addressCountry": "SE"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 56.0337,
+        "longitude": 14.1664
+      },
+      "openingHoursSpecification": [
+        {"@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday"], "opens": "11:00", "closes": "21:00"},
+        {"@type": "OpeningHoursSpecification", "dayOfWeek": ["Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"], "opens": "10:00", "closes": "22:00"}
+      ],
+      "sameAs": ["https://www.instagram.com/rodeluxe__/", "https://www.facebook.com/p/Rodeluxe-Salong-61573210080819/", "https://www.bokadirekt.se/places/rodeluxe-130945"],
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.9",
+        "reviewCount": "52"
+      },
+      "priceRange": "250–400 kr"
+    }
+    </script>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="dns-prefetch" href="https://cdn.jsdelivr.net" />
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Inter:wght@200;300;400;500;600&display=swap" rel="stylesheet" media="print" onload="this.media='all'" />
+    <noscript><link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Inter:wght@200;300;400;500;600&display=swap" rel="stylesheet" /></noscript>
+
+    <!-- PWA -->
+    <link rel="manifest" href="./site.webmanifest" />
+    <link rel="apple-touch-icon" href="./favicon.svg" />
+
+    <link rel="stylesheet" href="./styles.css?v=20260504-66" />
+    <link rel="icon" href="./favicon.svg" type="image/svg+xml" />
+  </head>
+
+  <body>
+    <!-- Custom Cursor -->
+    <div class="cursor" id="cursor">
+      <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <!-- Single blade at downward cutting angle -->
+        <path d="M20 18L38 26L36 29L19 21" fill="#c9a96e"/>
+        <!-- Upper Handle Ring -->
+        <ellipse cx="10" cy="10" rx="5" ry="4" stroke="#c9a96e" stroke-width="2.5" fill="none"/>
+        <!-- Lower Handle Ring -->
+        <ellipse cx="10" cy="24" rx="5" ry="4" stroke="#c9a96e" stroke-width="2.5" fill="none"/>
+        <!-- Pivot Screw -->
+        <circle cx="20" cy="18" r="3" fill="#c9a96e"/>
+        <circle cx="20" cy="18" r="1.5" fill="#1a1a1a"/>
+        <!-- Handle connectors -->
+        <path d="M14 11L18 16" stroke="#c9a96e" stroke-width="2" stroke-linecap="round"/>
+        <path d="M14 23L18 20" stroke="#c9a96e" stroke-width="2" stroke-linecap="round"/>
+      </svg>
+    </div>
+    <div class="cursor-trail" id="cursorTrail"></div>
+    
+    <!-- Preloader -->
+    <div class="preloader" id="preloader">
+      <div class="preloader__content">
+        <svg class="preloader__logo" viewBox="0 0 100 100" aria-hidden="true">
+          <circle class="preloader__circle" cx="50" cy="50" r="45" fill="none" stroke="#c9a96e" stroke-width="2"/>
+          <text class="preloader__text" x="50" y="58" text-anchor="middle" fill="#c9a96e" font-family="Cinzel" font-size="24">RD</text>
+        </svg>
+        <div class="preloader__bar">
+          <div class="preloader__progress" id="preloaderProgress"></div>
+        </div>
+      </div>
+    </div>
+
+    <header class="header">
+      <div class="container">
+        <div class="header__inner">
+          <div class="header__left">
+            <a class="logo" href="#hem" aria-label="Rodeluxe – Hem">
+              <img src="./logo.webp?v=20260504-52" alt="Rodeluxe Frisör Salong Logo" class="logo__img" width="600" height="54" />
+            </a>
+            <div class="open-badge" id="openBadge" aria-live="polite">
+              <span class="open-badge__dot"></span>
+              <span class="open-badge__text" id="openBadgeText">Kontrollerar...</span>
+            </div>
+          </div>
+
+          <div class="header__right">
+            <button class="theme-toggle" id="themeToggle" aria-label="Byt färgtem">
+              <svg class="theme-toggle__sun" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+              <svg class="theme-toggle__moon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+            </button>
+            <button
+              class="hamburger"
+              id="navToggle"
+              aria-label="Öppna meny"
+              aria-expanded="false"
+            >
+            <span class="hamburger__box">
+              <span class="hamburger__inner"></span>
+            </span>
+            </button>
+          </div>
+
+          <nav class="nav" id="mainNav" aria-label="Huvudmeny">
+            <a href="#hem" class="nav__link">Hem</a>
+            <a href="#tjanster" class="nav__link">Tjänster</a>
+            <a href="#om" class="nav__link">Om oss</a>
+            <a href="#galleri" class="nav__link">Galleri</a>
+            <a href="#recensioner" class="nav__link">Recensioner</a>
+            <a href="#kontakt" class="nav__link">Kontakt</a>
+
+            <a
+              class="btn btn--nav"
+              data-booking-trigger
+              rel="noopener noreferrer"
+              >Boka nu</a
+            >
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <!-- Scroll progress -->
+    <div class="scroll-progress" id="scrollProgress" aria-hidden="true"></div>
+
+    <!-- Scroll to top -->
+    <button class="scroll-top" id="scrollTop" aria-label="Scrolla till toppen" title="Toppen">
+      <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M10 15V5M5 10l5-5 5 5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    </button>
+
+    <!-- Lightbox -->
+    <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Bildvisning">
+      <button class="lightbox__close" id="lightboxClose" aria-label="Stäng">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M18 6L6 18M6 6l12 12" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+      </button>
+      <button class="lightbox__nav lightbox__nav--prev" id="lightboxPrev" aria-label="Föregående">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M15 18l-6-6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+      </button>
+      <div class="lightbox__img-wrap">
+        <img class="lightbox__img" id="lightboxImg" src="" alt="" />
+      </div>
+      <button class="lightbox__nav lightbox__nav--next" id="lightboxNext" aria-label="Nästa">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M9 18l6-6-6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+      </button>
+      <div class="lightbox__counter" id="lightboxCounter"></div>
+    </div>
+    <div class="lightbox__backdrop" id="lightboxBackdrop"></div>
+
+    <main id="main">
+      <!-- HERO -->
+      <section class="hero" id="hem" aria-label="Hero">
+        <div class="hero__bg" id="heroBg"></div>
+        <canvas class="hero__canvas" id="heroCanvas" aria-hidden="true"></canvas>
+        <div class="hero__particles" id="heroParticles"></div>
+        <div class="hero__overlay" aria-hidden="true"></div>
+        <div class="container">
+          <div class="hero__content">
+            <div class="hero__kicker">
+              <span class="hero__kicker-line"></span>
+              <span>Kristianstad</span>
+              <span class="hero__kicker-dot"></span>
+              <span>Nyöppnad</span>
+              <span class="hero__kicker-line"></span>
+            </div>
+            <h1 class="h1" id="heroTitle">RODELUXE</h1>
+            <p class="hero__sub">Premium Frisörsalong</p>
+            <p class="lead">
+              Välkommen till en plats där stil möter precision. Vi erbjuder
+              klippning, styling och ansiktsbehandling – för alla som kräver det bästa.
+            </p>
+            <div class="hero__rating">
+              <div class="hero__stars" aria-label="Betyg 5.0 av 5">
+                <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+              </div>
+              <span class="hero__rating-text">5.0 · 95 recensioner</span>
+            </div>
+            <div class="hero__actions">
+              <a class="btn btn--primary" data-booking-trigger rel="noopener noreferrer">Boka nu</a>
+              <a class="btn btn--primary" href="#tjanster">Se tjänster</a>
+            </div>
+          </div>
+        </div>
+        <div class="hero__scroll-hint" aria-hidden="true">
+          <span>Scrolla</span>
+          <div class="hero__scroll-line"></div>
+        </div>
+      </section>
+
+      <!-- BONUS CARD -->
+      <section class="section section--tight" id="bonuskort" aria-label="Bonuskort">
+        <div class="container">
+          <div class="bonus-card__wrapper">
+            <div class="bonus-card">
+              <div class="bonus-card__inner">
+                <div class="bonus-card__front">
+                  <div class="bonus-card__logo">
+                    <div class="bonus-card__rd">RD</div>
+                    <div class="bonus-card__brand">RODELUXE</div>
+                  </div>
+                  <div class="bonus-card__decoration bonus-card__decoration--top"></div>
+                  <div class="bonus-card__decoration bonus-card__decoration--bottom"></div>
+                </div>
+                <div class="bonus-card__back">
+                  <h2 class="bonus-card__title">BONUS KORT</h2>
+                  <h3 class="bonus-card__subtitle">KLIPP DIG GRATIS!</h3>
+                  <p class="bonus-card__description">
+                    Efter 8 antal besök vinner du en gratis klippning. Glöm inte att
+                    hämta med dig ditt Bonus Kort vid varje betald klippning för att
+                    stämpla rutorna.
+                  </p>
+                  <div class="bonus-card__stamps">
+                    <div class="stamp-box"></div>
+                    <div class="stamp-box"></div>
+                    <div class="stamp-box"></div>
+                    <div class="stamp-box"></div>
+                    <div class="stamp-box"></div>
+                    <div class="stamp-box"></div>
+                    <div class="stamp-box"></div>
+                    <div class="stamp-box stamp-box--free">GRATIS</div>
+                  </div>
+                  <div class="bonus-card__contact">
+                    <p>📞 072 930 48 98</p>
+                    <p>📸 @rodelux_</p>
+                    <p>👤 Rodeluxe</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- SERVICES -->
+      <section class="section curtain-reveal" id="tjanster" aria-label="Tjänster">
+        <div class="container">
+          <div class="section__head reveal">
+            <div>
+              <h2 class="section__title">Tjänster</h2>
+              <p class="section__subtitle">
+                Alla priser tydligt presenterade – eleganta val, exklusivt
+                utförande.
+              </p>
+            </div>
+          </div>
+
+          <!-- Service Filter -->
+          <div class="service-filter" id="serviceFilter" aria-label="Filtrera tjänster"></div>
+          <div id="servicesRoot" class="services"></div>
+        </div>
+      </section>
+
+      <!-- STATS -->
+      <section class="section section--tight" id="stats" aria-label="Statistik">
+        <div class="container">
+          <div class="stats-grid">
+            <div class="stat-card glass reveal">
+              <div class="stat-card__number" data-count="95">0</div>
+              <div class="stat-card__label">Nöjda kunder</div>
+            </div>
+            <div class="stat-card glass reveal">
+              <div class="stat-card__number" data-count="10">0</div>
+              <div class="stat-card__suffix">+</div>
+              <div class="stat-card__label">Tjänster</div>
+            </div>
+            <div class="stat-card glass reveal">
+              <div class="stat-card__number" data-count="250">0</div>
+              <div class="stat-card__suffix">kr</div>
+              <div class="stat-card__label">Lägsta pris från</div>
+            </div>
+            <div class="stat-card glass reveal">
+              <div class="stat-card__number" data-count="7">0</div>
+              <div class="stat-card__label">Dagar i veckan</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ABOUT -->
+      <section class="section section--tight curtain-reveal" id="om" aria-label="Om oss">
+        <div class="container">
+          <div class="section__head reveal">
+            <div>
+              <h2 class="section__title">Om oss</h2>
+              <p class="section__subtitle">
+                En premiumkänsla i varje detalj – från första mötet till sista
+                finishen.
+              </p>
+            </div>
+          </div>
+
+          <div class="about">
+            <div class="glass about__card reveal">
+              <p class="lead" id="aboutText" style="margin: 0"></p>
+            </div>
+
+            <div class="glass about__highlights reveal">
+              <div class="hl">
+                <div class="hl__icon" aria-hidden="true">✦</div>
+                <p class="hl__title">Precision</p>
+                <p class="hl__text">
+                  Varje linje sitter. Vi jobbar metodiskt för ett resultat som
+                  känns skräddarsytt.
+                </p>
+              </div>
+              <div class="hl">
+                <div class="hl__icon" aria-hidden="true">✦</div>
+                <p class="hl__title">Kvalitet</p>
+                <p class="hl__text">
+                  En upplevelse som håller – i både känsla och finish.
+                </p>
+              </div>
+              <div class="hl">
+                <div class="hl__icon" aria-hidden="true">✦</div>
+                <p class="hl__title">Atmosfär</p>
+                <p class="hl__text">
+                  Mörka toner, lugn energi och fokus på dig. En stund som känns
+                  exklusiv.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- GALLERY -->
+      <section class="section curtain-reveal" id="galleri" aria-label="Galleri">
+        <div class="container">
+          <div class="section__head reveal">
+            <div>
+              <h2 class="section__title">Galleri</h2>
+              <p class="section__subtitle">
+                Äkta bilder från Rodeluxe – samma visuella identitet som på
+                Bokadirekt.
+              </p>
+            </div>
+          </div>
+
+          <div class="gallery" id="galleryGrid"></div>
+        </div>
+      </section>
+
+      <!-- TESTIMONIALS -->
+      <section class="section curtain-reveal" id="recensioner" aria-label="Recensioner">
+        <div class="container">
+          <div class="section__head reveal">
+            <div>
+              <h2 class="section__title">Vad kunderna säger</h2>
+              <p class="section__subtitle">Äkta ord från nöjda kunder – din upplevelse är vår stolthet.</p>
+            </div>
+          </div>
+          <div class="testimonials stagger-children">
+            <div class="testimonial glass">
+              <div class="testimonial__stars" aria-label="5 stjärnor">★★★★★</div>
+              <blockquote class="testimonial__quote">&ldquo;Riktigt bra! Alltid nöjd när jag går hit. Professionell och noggrann – rekommenderas varmt.&rdquo;</blockquote>
+              <div class="testimonial__author">
+                <div class="testimonial__avatar" aria-hidden="true">M</div>
+                <div>
+                  <div class="testimonial__name">Mohammed</div>
+                  <div class="testimonial__via">via Bokadirekt · 5/5</div>
+                </div>
+              </div>
+            </div>
+            <div class="testimonial glass">
+              <div class="testimonial__stars" aria-label="5 stjärnor">★★★★★</div>
+              <blockquote class="testimonial__quote">&ldquo;Klipper mig så bra varje gång. Lätt att boka och alltid punktlig. 5 av 5!&rdquo;</blockquote>
+              <div class="testimonial__author">
+                <div class="testimonial__avatar" aria-hidden="true">A</div>
+                <div>
+                  <div class="testimonial__name">Ahmed</div>
+                  <div class="testimonial__via">via Bokadirekt · 5/5</div>
+                </div>
+              </div>
+            </div>
+            <div class="testimonial glass">
+              <div class="testimonial__stars" aria-label="5 stjärnor">★★★★★</div>
+              <blockquote class="testimonial__quote">&ldquo;Fantastisk service och skön atmosfär. Hår och skägg sitter perfekt. Kommer alltid tillbaka!&rdquo;</blockquote>
+              <div class="testimonial__author">
+                <div class="testimonial__avatar" aria-hidden="true">E</div>
+                <div>
+                  <div class="testimonial__name">Erik</div>
+                  <div class="testimonial__via">via Google Maps · 5/5</div>
+                </div>
+              </div>
+            </div>
+            <div class="testimonial glass">
+              <div class="testimonial__stars" aria-label="5 stjärnor">★★★★★</div>
+              <blockquote class="testimonial__quote">&ldquo;Bästa frisören i Kristianstad! Vet exakt vad jag vill ha och levererar varje gång.&rdquo;</blockquote>
+              <div class="testimonial__author">
+                <div class="testimonial__avatar" aria-hidden="true">S</div>
+                <div>
+                  <div class="testimonial__name">Sara</div>
+                  <div class="testimonial__via">via Bokadirekt · 5/5</div>
+                </div>
+              </div>
+            </div>
+            <div class="testimonial glass">
+              <div class="testimonial__stars" aria-label="5 stjärnor">★★★★★</div>
+              <blockquote class="testimonial__quote">&ldquo;Professionell, snäll och otroligt skicklig. Min son älskar sina klippningar här!&rdquo;</blockquote>
+              <div class="testimonial__author">
+                <div class="testimonial__avatar" aria-hidden="true">L</div>
+                <div>
+                  <div class="testimonial__name">Linda</div>
+                  <div class="testimonial__via">via Google Maps · 5/5</div>
+                </div>
+              </div>
+            </div>
+            <div class="testimonial glass">
+              <div class="testimonial__stars" aria-label="5 stjärnor">★★★★★</div>
+              <blockquote class="testimonial__quote">&ldquo;Skäggvård på toppnivå! Noggrann, detaljorienterad och resultatet håller länge.&rdquo;</blockquote>
+              <div class="testimonial__author">
+                <div class="testimonial__avatar" aria-hidden="true">J</div>
+                <div>
+                  <div class="testimonial__name">Johan</div>
+                  <div class="testimonial__via">via Bokadirekt · 5/5</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- BOOKING CTA -->
+      <section class="section section--tight curtain-reveal" aria-label="Bokning">
+        <div class="container">
+          <div class="glass cta reveal-3d">
+            <div class="cta__inner">
+              <div class="cta__copy">
+                <h3 class="cta__title">Boka din tid – direkt</h3>
+                <p class="cta__text">
+                  Upplev premiumkvalitet med en exklusiv känsla. Välj din tjänst
+                  och säkra din tid hos Rodeluxe.
+                </p>
+              </div>
+              <div class="cta__actions">
+                <a
+                  class="btn"
+                  data-booking-trigger
+                  rel="noopener noreferrer"
+                  >Boka nu</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- CONTACT -->
+      <section class="section curtain-reveal" id="kontakt" aria-label="Kontakt">
+        <div class="container">
+          <div class="section__head reveal">
+            <div>
+              <h2 class="section__title">Kontakt</h2>
+              <p class="section__subtitle">
+                Adress, telefon och öppettider – för en smidig premiumupplevelse.
+              </p>
+            </div>
+          </div>
+
+          <div class="contact">
+            <div class="glass contact__card reveal">
+              <div class="kv">
+                <div class="kv__row">
+                  <div class="kv__k">Adress</div>
+                  <div class="kv__v"><a id="contactAddress" href="#" target="_blank" rel="noopener noreferrer"></a></div>
+                </div>
+                <div class="kv__row">
+                  <div class="kv__k">Telefon</div>
+                  <div class="kv__v"><a id="contactPhone" href="#" rel="noopener"> </a></div>
+                </div>
+                <div class="kv__row">
+                  <div class="kv__k">Instagram</div>
+                  <div class="kv__v"><a id="contactInstagram" href="#" target="_blank" rel="noopener noreferrer"></a></div>
+                </div>
+                <div class="kv__row">
+                  <div class="kv__k">Facebook</div>
+                  <div class="kv__v"><a id="contactFacebook" href="#" target="_blank" rel="noopener noreferrer"></a></div>
+                </div>
+              </div>
+              <div style="margin-top: 18px">
+                <div class="kv__k">Ordinarie öppettider</div>
+                <div class="hours" id="hoursList"></div>
+                <p class="section__subtitle" id="hoursNote" style="margin-top: 12px"></p>
+              </div>
+            </div>
+
+            <div class="glass contact__qr reveal">
+              <div class="contact__qr-content">
+                <img src="./crcode_rodeluxe.webp" alt="QR-kod för bokning" class="contact__qr-img" width="200" height="200" />
+                <div class="contact__qr-text">
+                  <h4>Skanna för att boka</h4>
+                  <p>Snabb och enkel bokning direkt i mobilen</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="glass contact__map reveal">
+              <iframe class="map" id="mapEmbed" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+          </div>
+
+          <!-- Contact Form -->
+          <div class="contact-form-wrap">
+            <div class="glass contact-form__card">
+              <h3 class="contact-form__title">Skicka ett meddelande</h3>
+              <p class="contact-form__sub">Har du frågor? Vi svarar så snart vi kan.</p>
+              <form class="contact-form" id="contactForm" name="contact" method="POST" data-netlify="true" data-netlify-honeypot="bot-field" novalidate>
+                <input type="hidden" name="form-name" value="contact" />
+                <input type="hidden" name="bot-field" style="display:none" />
+                <div class="form-row">
+                  <div class="form-group">
+                    <label class="form-label" for="formName">Namn <span aria-hidden="true">*</span></label>
+                    <input class="form-input" type="text" id="formName" name="name" placeholder="Ditt namn" required autocomplete="name" />
+                  </div>
+                  <div class="form-group">
+                    <label class="form-label" for="formEmail">E-post <span aria-hidden="true">*</span></label>
+                    <input class="form-input" type="email" id="formEmail" name="email" placeholder="din@email.com" required autocomplete="email" />
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label class="form-label" for="formSubject">Ämne</label>
+                  <select class="form-input form-select" id="formSubject" name="subject">
+                    <option value="bokning">Bokning / Tid</option>
+                    <option value="pris">Prisfråga</option>
+                    <option value="senior">Hemkörningsklippning för seniorer</option>
+                    <option value="annat">Annat</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <label class="form-label" for="formMessage">Meddelande <span aria-hidden="true">*</span></label>
+                  <textarea class="form-input form-textarea" id="formMessage" name="message" placeholder="Skriv ditt meddelande här..." required rows="4"></textarea>
+                </div>
+                <div class="form-actions">
+                  <button type="submit" class="btn btn--primary" id="formSubmit">Skicka meddelande</button>
+                  <div class="form-status" id="formStatus" aria-live="polite"></div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <footer class="footer">
+        <div class="container">
+          <div class="footer__inner">
+            <div class="footer__copy">
+              © <span id="year"></span> <span id="footerBrand">Rodeluxe</span>
+              &nbsp;·&nbsp; Developed by <a href="https://github.com/omar1u7777" target="_blank" rel="noopener noreferrer" class="footer__dev">Omar Alhaek</a>
+            </div>
+            <div class="footer__socials">
+              <a class="footer__social" href="https://www.instagram.com/rodeluxe__/" target="_blank" rel="noopener noreferrer" aria-label="Rodeluxe på Instagram">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37a4 4 0 1 1-3.37-3.37 4 4 0 0 1 3.37 3.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+                <span>@rodeluxe__</span>
+              </a>
+              <a class="footer__social" href="https://www.facebook.com/p/Rodeluxe-Salong-61573210080819/" target="_blank" rel="noopener noreferrer" aria-label="Rodeluxe på Facebook">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+                <span>Rodeluxe Salong</span>
+              </a>
+              <a class="footer__social" data-booking-trigger rel="noopener noreferrer">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+                <span>Bokadirekt</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </main>
+
+    <!-- Floating Book Button -->
+    <a class="float-book" id="floatBook" data-booking-trigger rel="noopener noreferrer" aria-label="Boka tid hos Rodeluxe">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+      <span>Boka Nu</span>
+    </a>
+
+    <!-- Booking Modal -->
+    <div class="booking-modal" id="bookingModal" aria-hidden="true">
+      <div class="booking-modal__backdrop" id="bookingModalBackdrop"></div>
+      <div class="booking-modal__content glass">
+        <button class="booking-modal__close" id="bookingModalClose" aria-label="Stäng">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+        </button>
+        <h3 class="booking-modal__title">Välj bokningssystem</h3>
+        <p class="booking-modal__subtitle">Välj ditt föredragna bokningssystem</p>
+        <div class="booking-modal__options">
+          <a class="booking-modal__option" href="https://www.bokadirekt.se/places/rodeluxe-130945" target="_blank" rel="noopener noreferrer" data-booking-system="bokadirekt">
+            <div class="booking-modal__option-icon">📅</div>
+            <div class="booking-modal__option-content">
+              <h4>Bokadirekt</h4>
+              <p>Svenskt bokningssystem</p>
+            </div>
+          </a>
+          <a class="booking-modal__option" href="https://book.heygoldie.com/Rodeluxe" target="_blank" rel="noopener noreferrer" data-booking-system="heygoldie">
+            <div class="booking-modal__option-icon">✨</div>
+            <div class="booking-modal__option-content">
+              <h4>Heygoldie</h4>
+              <p>Alternativt bokningssystem</p>
+            </div>
+          </a>
+        </div>
+        <label class="booking-modal__remember">
+          <input type="checkbox" id="rememberBookingChoice" />
+          <span>Kom ihåg mitt val</span>
+        </label>
+      </div>
+    </div>
+
+    <script type="module" src="./main.js?v=20260504-64"></script>
+  </body>
+</html>
