@@ -477,38 +477,46 @@ function setupContactForm() {
 
     if (submit) { submit.disabled = true; submit.textContent = "Skickar…"; }
 
-    const body = new URLSearchParams({
-      "form-name": "contact",
-      name, email, subject: subject ?? "", message,
-    }).toString();
-
-    try {
-      const res = await fetch("/", {
-        method: "POST",
-        headers: { "Content-Type": "application/x-www-form-urlencoded" },
-        body,
-      });
-
-      if (res.ok) {
-        if (status) { status.textContent = "✓ Tack! Vi återkommer inom kort."; status.className = "form-status success"; }
-        if (submit) { submit.textContent = "Skickat ✓"; }
-        form.reset();
-        setTimeout(() => {
-          if (status) { status.textContent = ""; status.className = "form-status"; }
-          if (submit) { submit.disabled = false; submit.textContent = "Skicka meddelande"; }
-        }, 6000);
-      } else {
-        throw new Error("non-ok");
-      }
-    } catch {
-      /* Fallback to mailto if not on Netlify (local dev) */
-      const mailBody    = encodeURIComponent(`Namn: ${name}\nE-post: ${email}\nÄmne: ${subject}\n\n${message}`);
-      const mailSubject = encodeURIComponent(`[Rodeluxe] Meddelande`);
-      window.location.href = `mailto:${CONTACT.email ?? "info@rodeluxe.se"}?subject=${mailSubject}&body=${mailBody}`;
-      if (status) { status.textContent = "Öppnar din e-post…"; status.className = "form-status success"; }
-      if (submit) { submit.disabled = false; submit.textContent = "Skicka meddelande"; }
-    }
+    // Formspree handles the submission automatically
+    // Just show success message after submission
+    if (status) { status.textContent = "Tack! Vi har mottagit ditt meddelande."; status.className = "form-status success"; }
+    form.reset();
+    
+    if (submit) { submit.disabled = false; submit.textContent = "Skicka"; }
   });
+}
+
+/* ─── Booking Modal ──────────────────────────────────── */
+function setupBookingModal() {
+  const modal = document.getElementById("bookingModal");
+  const openBtn = document.getElementById("openBookingModal");
+  const closeBtn = document.getElementById("closeBookingModal");
+  const rememberCheckbox = document.getElementById("rememberBookingChoice");
+  
+  if (!modal || !openBtn || !closeBtn) return;
+
+  openBtn.addEventListener("click", () => modal.classList.add("active"));
+  closeBtn.addEventListener("click", () => modal.classList.remove("active"));
+  
+  modal.addEventListener("click", (e) => {
+    if (e.target === modal) modal.classList.remove("active");
+  });
+
+  // Remember booking choice
+  if (rememberCheckbox) {
+    const savedChoice = localStorage.getItem("bookingChoice");
+    if (savedChoice === "bokadirekt") {
+      rememberCheckbox.checked = true;
+    }
+    
+    rememberCheckbox.addEventListener("change", () => {
+      if (rememberCheckbox.checked) {
+        localStorage.setItem("bookingChoice", "bokadirekt");
+      } else {
+        localStorage.removeItem("bookingChoice");
+      }
+    });
+  }
 }
 
 /* ─── Reveal animations ─────────────────────────────── */

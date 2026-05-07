@@ -546,9 +546,7 @@
             <div class="glass contact-form__card">
               <h3 class="contact-form__title">Skicka ett meddelande</h3>
               <p class="contact-form__sub">Har du frågor? Vi svarar så snart vi kan.</p>
-              <form class="contact-form" id="contactForm" name="contact" method="POST" data-netlify="true" data-netlify-honeypot="bot-field" novalidate>
-                <input type="hidden" name="form-name" value="contact" />
-                <input type="hidden" name="bot-field" style="display:none" />
+              <form class="contact-form" id="contactForm" name="contact" method="POST" action="https://formspree.io/f/YOUR_FORMSPREE_ID" novalidate>
                 <div class="form-row">
                   <div class="form-group">
                     <label class="form-label" for="formName">Namn <span aria-hidden="true">*</span></label>
@@ -646,6 +644,6 @@
       </div>
     </div>
 
-    <script type="module" src="./main.js?v=20260504-64"></script>
+    <script type="module" src="./main.js?v=20260504-67"></script>
   </body>
 </html>
