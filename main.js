@@ -477,12 +477,29 @@ function setupContactForm() {
 
     if (submit) { submit.disabled = true; submit.textContent = "Skickar…"; }
 
-    // Formspree handles the submission automatically
-    // Just show success message after submission
-    if (status) { status.textContent = "Tack! Vi har mottagit ditt meddelande."; status.className = "form-status success"; }
-    form.reset();
-    
-    if (submit) { submit.disabled = false; submit.textContent = "Skicka"; }
+    try {
+      const formData = new FormData(form);
+      const response = await fetch(form.action, {
+        method: "POST",
+        body: formData,
+        headers: {
+          "Accept": "application/json"
+        }
+      });
+
+      if (response.ok) {
+        const result = await response.json();
+        if (status) { status.textContent = "Tack! Vi har mottagit ditt meddelande."; status.className = "form-status success"; }
+        form.reset();
+      } else {
+        throw new Error("Form submission failed");
+      }
+    } catch (error) {
+      console.error("Form submission error:", error);
+      if (status) { status.textContent = "Ett fel uppstod. Försök igen eller kontakta oss direkt."; status.className = "form-status error"; }
+    } finally {
+      if (submit) { submit.disabled = false; submit.textContent = "Skicka"; }
+    }
   });
 }
 
