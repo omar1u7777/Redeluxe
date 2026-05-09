@@ -51,7 +51,7 @@ export const CONTACT = {
   mapEmbedUrl:
     "https://maps.google.com/maps?q=56.0337,14.1664&z=16&output=embed",
   mapsUrl:
-    "https://www.google.com/maps/search/?api=1&query=G%C3%B6tgatan+18%2C+290+31%2C+Kristianstad",
+    "https://maps.app.goo.gl/sskJF94BQNtN2h59A",
 };
 
 const BD = "https://www.bokadirekt.se/places/rodeluxe-130945";
