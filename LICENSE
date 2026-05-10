@@ -1,21 +1,71 @@
-MIT License
+PROPRIETARY SOURCE-AVAILABLE LICENSE
 
-Copyright (c) 2026 OMAR AHMAD ALHAEK
+Copyright (c) 2026 Omar Ahmad Alhaek
+All rights reserved.
 
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
+This software and its source code (the "Software") are the exclusive
+intellectual property of Omar Ahmad Alhaek ("the Author").
 
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
+The Software has been licensed exclusively for production use by:
+    Rodeluxe Frisörsalong, Götgatan 18, 290 31 Kristianstad, Sweden
+    (https://rodeluxesalong.se/)
 
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.
+────────────────────────────────────────────────────────────────────────
+PERMITTED USES
+────────────────────────────────────────────────────────────────────────
+
+1. VIEWING & PORTFOLIO REFERENCE
+   You are permitted to view this source code for the purposes of:
+   - Evaluating the Author's professional skills (e.g. recruitment).
+   - Educational reference and personal study.
+
+2. EXCLUSIVE PRODUCTION RIGHTS
+   Only Rodeluxe Frisörsalong is licensed to deploy and use this
+   Software in production at https://rodeluxesalong.se/.
+
+────────────────────────────────────────────────────────────────────────
+PROHIBITED USES
+────────────────────────────────────────────────────────────────────────
+
+Without the prior written permission of the Author, you MAY NOT:
+
+1. Copy, fork, clone for redistribution, modify, or create derivative
+   works based on this Software.
+2. Use this Software, in whole or in part, for any commercial purpose.
+3. Deploy, host, or operate this Software on any domain or service
+   other than https://rodeluxesalong.se/.
+4. Sell, sublicense, lease, or otherwise transfer rights to this
+   Software.
+5. Remove or alter any copyright, trademark, or attribution notices.
+6. Use the names, logos, branding, or trade dress of "Rodeluxe" or
+   "Omar Ahmad Alhaek".
+
+────────────────────────────────────────────────────────────────────────
+ATTRIBUTION
+────────────────────────────────────────────────────────────────────────
+
+Any permitted reference to this Software must include:
+"Developed by Omar Ahmad Alhaek – https://github.com/omar1u7777"
+
+────────────────────────────────────────────────────────────────────────
+DISCLAIMER OF WARRANTY
+────────────────────────────────────────────────────────────────────────
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS
+OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
+MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.
+
+IN NO EVENT SHALL THE AUTHOR OR COPYRIGHT HOLDER BE LIABLE FOR ANY
+CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT,
+TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE
+SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+
+────────────────────────────────────────────────────────────────────────
+GOVERNING LAW
+────────────────────────────────────────────────────────────────────────
+
+This License shall be governed by and construed in accordance with the
+laws of Sweden. Any disputes arising under this License shall be
+subject to the exclusive jurisdiction of the Swedish courts.
+
+For licensing inquiries, please contact: omar1u7777 (GitHub)
