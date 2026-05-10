@@ -483,7 +483,8 @@ select:focus-visible {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding-top: 88px;
+  padding-top: clamp(110px, 14vh, 160px);
+  padding-bottom: 40px;
   overflow: hidden;
 }
 .hero__bg {
@@ -2193,8 +2194,6 @@ select:focus-visible {
 
 /* ─── Short Screens (height ≤ 600px) ────────────────── */
 @media (max-height: 600px) {
-  .hero               { min-height: 100vh; padding: 80px 0 40px; }
-  .header             { padding: 8px 0; }
   .preloader__logo    { width: 60px; }
 }
 
