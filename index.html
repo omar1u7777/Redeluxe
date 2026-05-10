@@ -21,6 +21,12 @@
     <meta name="geo.position" content="56.0337;14.1664" />
     <meta name="ICBM" content="56.0337, 14.1664" />
 
+    <!-- Security Headers (backup if server headers fail) -->
+    <meta http-equiv="X-Content-Type-Options" content="nosniff" />
+    <meta http-equiv="X-XSS-Protection" content="1; mode=block" />
+    <meta http-equiv="Referrer-Policy" content="strict-origin-when-cross-origin" />
+    <meta http-equiv="Permissions-Policy" content="camera=(), microphone=(), geolocation=(self), payment=(), usb=()" />
+
     <title>Rodeluxe – Bästa Frisör & Barberare i Kristianstad | Herrklippning, Damklippning, Skägg</title>
     <meta name="description" content="Rodeluxe – frisör & barberare Kristianstad. Herrklippning, damklippning, skägg, styling. Premium kvalitet, precision, exklusiv upplevelse. Boka tid idag!" />
     <meta name="keywords" content="frisör Kristianstad, barberare Kristianstad, herrklippning, damklippning, ansiktsbehandling, Rodeluxe, hårklippning, salong, skägg, styling, herrfrisör, damfrisör, klippning, helsingborg, malmö, skåne" />
@@ -482,7 +488,7 @@
     <link rel="manifest" href="./site.webmanifest" />
     <link rel="apple-touch-icon" href="./favicon.svg" />
 
-    <link rel="stylesheet" href="./styles.css?v=20260504-74" />
+    <link rel="stylesheet" href="./styles.css?v=20260504-75" />
     <link rel="icon" href="./favicon.svg" type="image/svg+xml" />
   </head>
 
@@ -997,6 +1003,13 @@
               <h3 class="contact-form__title">Skicka ett meddelande</h3>
               <p class="contact-form__sub">Har du frågor? Vi svarar så snart vi kan.</p>
               <form class="contact-form" id="contactForm" name="contact" method="POST" action="https://formspree.io/f/mkoyqwkb" novalidate>
+                <!-- Honeypot anti-spam (hidden from users, bots fill it) -->
+                <div class="honeypot" aria-hidden="true">
+                  <label for="website_url">Webbplats (lämna tom)</label>
+                  <input type="text" name="_gotcha" id="website_url" tabindex="-1" autocomplete="off" />
+                </div>
+                <input type="hidden" name="_subject" value="Ny förfrågan från Rodeluxe webbsida" />
+                <input type="hidden" name="_language" value="sv" />
                 <div class="form-row">
                   <div class="form-group">
                     <label class="form-label" for="formName">Namn <span aria-hidden="true">*</span></label>
@@ -1040,7 +1053,7 @@
           290 31 Kristianstad<br>
           Skåne, Sverige<br>
           Tel: <a href="tel:+46729304898">+46 72 930 48 98</a><br>
-          Email: <a href="mailto:ahmed.darkoushi99@gmail.com">ahmed.darkoushi99@gmail.com</a>
+          Email: <a href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#97;&#104;&#109;&#101;&#100;&#46;&#100;&#97;&#114;&#107;&#111;&#117;&#115;&#104;&#105;&#57;&#57;&#64;&#103;&#109;&#97;&#105;&#108;&#46;&#99;&#111;&#109;">&#97;&#104;&#109;&#101;&#100;&#46;&#100;&#97;&#114;&#107;&#111;&#117;&#115;&#104;&#105;&#57;&#57;&#64;&#103;&#109;&#97;&#105;&#108;&#46;&#99;&#111;&#109;</a>
         </address>
       </div>
 
@@ -1108,6 +1121,6 @@
       </div>
     </div>
 
-    <script type="module" src="./main.js?v=20260504-83"></script>
+    <script type="module" src="./main.js?v=20260504-84"></script>
   </body>
 </html>

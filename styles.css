@@ -2231,6 +2231,18 @@ select:focus-visible {
   a[href]::after { content: " (" attr(href) ")"; font-size: 11px; }
 }
 
+/* ─── Honeypot anti-spam (invisible to humans) ──────── */
+.honeypot {
+  position: absolute !important;
+  left: -9999px !important;
+  top: -9999px !important;
+  width: 1px !important;
+  height: 1px !important;
+  opacity: 0 !important;
+  pointer-events: none !important;
+  visibility: hidden !important;
+}
+
 /* ─── Hidden but accessible (SEO) ───────────────────── */
 .visually-hidden {
   position: absolute !important;
